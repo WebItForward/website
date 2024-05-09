@@ -9,16 +9,16 @@ export default function CoderApplication() {
     githubUrl: "",
     linkedInUrl: "",
     programingLanguages: {
-      JS: false,
-      Python: false,
-      Java: false,
-      Go: false,
-      Ruby: false,
-      Swift: false,
-      Rust: false,
-      Kotlin: false,
       C: false,
+      Go: false,
+      Java: false,
+      JS: false,
+      Kotlin: false,
       Other: false,
+      Python: false,
+      Ruby: false,
+      Rust: false,
+      Swift: false,
     },
     backend: {
       Django: false,
@@ -28,20 +28,20 @@ export default function CoderApplication() {
       Other: false,
     },
     databases: {
+      MongoDB: false,
       MySQL: false,
+      Other: false,
       PostgreSQL: false,
       SQLite: false,
-      MongoDB: false,
-      Other: false,
     },
     spokenLanguages: {
-      English: false,
-      Spanish: false,
-      Russian: false,
-      Mandarin: false,
       Cantonese: false,
-      Vietnamese: false,
+      English: false,
+      Mandarin: false,
       Portugese: false,
+      Russian: false,
+      Spanish: false,
+      Vietnamese: false,
     },
   });
 
@@ -118,43 +118,45 @@ export default function CoderApplication() {
             <label>LinkedIn</label>
             <input type="text" />
           </div>
-          <div>
-            <div>
+          <div className="programing-languages-container">
+            <div className="programing-languages-container-item">
               <label>C (All)</label>
               <input type="checkbox" />
             </div>
-            <div>
+            <div className="programing-languages-container-item">
               <label>Go</label>
               <input type="checkbox" />
             </div>
-            <div>
+            <div className="programing-languages-container-item">
               <label>Java</label>
               <input type="checkbox" />
             </div>
-            <div>
+            <div className="programing-languages-container-item">
               <label>Javascript</label>
               <input type="checkbox" />
             </div>
-            <div>
+            <div className="programing-languages-container-item">
               <label>Kotlin</label>
               <input type="checkbox" />
             </div>
-            <div>
-              <label></label>
+            <div className="programing-languages-container-item">
+              <label>Other</label>
               <input type="checkbox" />
             </div>
-            <div>
-              <label></label>
+            <div className="programing-languages-container-item">
+              <label>Python</label>
               <input type="checkbox" />
             </div>
-            <div>
-              <label></label>
+            <div className="programing-languages-container-item">
+              <label>Ruby</label>
               <input type="checkbox" />
             </div>
-            <div>
+            <div className="programing-languages-container-item">
+              <label>Rust</label>
               <input type="checkbox" />
             </div>
-            <div>
+            <div className="programing-languages-container-item">
+              <label>Swift</label>
               <input type="checkbox" />
             </div>
           </div>
