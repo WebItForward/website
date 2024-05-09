@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Box, TextField } from "@mui/material";
 import "./CoderApplication.css";
 
 export default function CoderApplication() {
@@ -96,72 +97,112 @@ export default function CoderApplication() {
   return (
     <>
       <h1>Coder Application</h1>
-      <fieldset>
-        <form onSubmit={handleSave}>
-          <div>
-            <label>First Name</label>
-            <input type="text" />
-          </div>
-          <div>
-            <label>Last Name</label>
-            <input type="text" />
-          </div>
-          <div>
-            <label>Email</label>
-            <input type="email" />
-          </div>
-          <div>
-            <label>GitHub</label>
-            <input type="text" />
-          </div>
-          <div>
-            <label>LinkedIn</label>
-            <input type="text" />
-          </div>
-          <div className="programing-languages-container">
-            <div className="programing-languages-container-item">
-              <label>C (All)</label>
-              <input type="checkbox" />
+      <Box>
+        <fieldset>
+          <form onSubmit={handleSave}>
+            <div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+              >
+                <TextField
+                  variant="outlined"
+                  label="First Name"
+                  style={{ margin: "1rem", width: "50%" }}
+                />
+                <TextField
+                  variant="outlined"
+                  label="Last Name"
+                  style={{ margin: "1rem", width: "50%" }}
+                />
+              </div>
             </div>
-            <div className="programing-languages-container-item">
-              <label>Go</label>
-              <input type="checkbox" />
+            <div>
+              <TextField
+                variant="outlined"
+                label="Email Address"
+                type="email"
+              />
             </div>
-            <div className="programing-languages-container-item">
-              <label>Java</label>
-              <input type="checkbox" />
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div>
+                <TextField
+                  variant="outlined"
+                  label="GitHub"
+                  style={{ margin: "1rem", width: "50%" }}
+                />
+                <TextField
+                  variant="outlined"
+                  label="LinkedIn"
+                  style={{ margin: "1rem", width: "50%" }}
+                />
+              </div>
             </div>
-            <div className="programing-languages-container-item">
-              <label>Javascript</label>
-              <input type="checkbox" />
+            <div className="programing-languages-container">
+              <div className="programing-languages-container-item">
+                <label>C (All)</label>
+                <input type="checkbox" />
+              </div>
+              <div className="programing-languages-container-item">
+                <label>Go</label>
+                <input type="checkbox" />
+              </div>
+              <div className="programing-languages-container-item">
+                <label>Java</label>
+                <input type="checkbox" />
+              </div>
+              <div className="programing-languages-container-item">
+                <label>Javascript</label>
+                <input type="checkbox" />
+              </div>
+              <div className="programing-languages-container-item">
+                <label>Kotlin</label>
+                <input type="checkbox" />
+              </div>
+              <div className="programing-languages-container-item">
+                <label>Other</label>
+                <input type="checkbox" />
+              </div>
+              <div className="programing-languages-container-item">
+                <label>Python</label>
+                <input type="checkbox" />
+              </div>
+              <div className="programing-languages-container-item">
+                <label>Ruby</label>
+                <input type="checkbox" />
+              </div>
+              <div className="programing-languages-container-item">
+                <label>Rust</label>
+                <input type="checkbox" />
+              </div>
+              <div className="programing-languages-container-item">
+                <label>Swift</label>
+                <input type="checkbox" />
+              </div>
             </div>
-            <div className="programing-languages-container-item">
-              <label>Kotlin</label>
-              <input type="checkbox" />
+            <div className="backend-container">
+              <div className="backend-item">
+                <input type="checkbox" />
+              </div>
+              <div className="backend-item">
+                <input type="checkbox" />
+              </div>
+              <div className="backend-item">
+                <input type="checkbox" />
+              </div>
+              <div className="backend-item">
+                <input type="checkbox" />
+              </div>
+              <div className="backend-item">
+                <input type="checkbox" />
+              </div>
             </div>
-            <div className="programing-languages-container-item">
-              <label>Other</label>
-              <input type="checkbox" />
-            </div>
-            <div className="programing-languages-container-item">
-              <label>Python</label>
-              <input type="checkbox" />
-            </div>
-            <div className="programing-languages-container-item">
-              <label>Ruby</label>
-              <input type="checkbox" />
-            </div>
-            <div className="programing-languages-container-item">
-              <label>Rust</label>
-              <input type="checkbox" />
-            </div>
-            <div className="programing-languages-container-item">
-              <label>Swift</label>
-              <input type="checkbox" />
-            </div>
-          </div>
-        </form>
-      </fieldset>
+          </form>
+        </fieldset>
+      </Box>
     </>
   );
 }
