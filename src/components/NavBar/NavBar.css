@@ -18,6 +18,8 @@
   padding: 16px 16px;
   cursor: pointer;
   vertical-align: middle;
+  text-decoration: none;
+  color: white;
 }
 
 .navbar__title img {
