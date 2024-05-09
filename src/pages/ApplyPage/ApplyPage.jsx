@@ -1,9 +1,10 @@
+import { useState } from "react";
 import "./ApplyPage.css";
 
-export default function AboutPage() {
+export default function ApplyPage() {
   return (
-    <>
-      <h1>About Page</h1>
-    </>
+    <div className="apply-container">
+      <h1>Apply Page</h1>
+    </div>
   );
 }
