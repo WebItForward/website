@@ -9,3 +9,23 @@
   flex-direction: column;
   margin: 1rem;
 }
+
+.backend-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.backend-item {
+  margin: 1rem;
+}
+
+.databases-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.databases-item {
+  margin: 1rem;
+}

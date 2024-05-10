@@ -113,6 +113,11 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
+          <Box>
+            <Button sx={{ backgroundColor: "black", color: "white" }}>
+              Donate
+            </Button>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>

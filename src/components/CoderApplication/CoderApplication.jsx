@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, TextField } from "@mui/material";
+import { Box, Button, Container, TextField } from "@mui/material";
 import "./CoderApplication.css";
 
 export default function CoderApplication() {
@@ -97,112 +97,149 @@ export default function CoderApplication() {
   return (
     <>
       <h1>Coder Application</h1>
-      <Box>
-        <fieldset>
-          <form onSubmit={handleSave}>
-            <div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                }}
-              >
-                <TextField
-                  variant="outlined"
-                  label="First Name"
-                  style={{ margin: "1rem", width: "50%" }}
-                />
-                <TextField
-                  variant="outlined"
-                  label="Last Name"
-                  style={{ margin: "1rem", width: "50%" }}
-                />
-              </div>
-            </div>
-            <div>
-              <TextField
-                variant="outlined"
-                label="Email Address"
-                type="email"
-              />
-            </div>
-            <div style={{ display: "flex", flexDirection: "row" }}>
+      <Container>
+        <Box>
+          <fieldset>
+            <form onSubmit={handleSave}>
               <div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                  }}
+                >
+                  <TextField
+                    variant="outlined"
+                    label="First Name"
+                    style={{ margin: "1rem", width: "50%" }}
+                  />
+                  <TextField
+                    variant="outlined"
+                    label="Last Name"
+                    style={{ margin: "1rem", width: "50%" }}
+                  />
+                </div>
+              </div>
+              <div sx={{ display: "flex", flexDirection: "row" }}>
                 <TextField
                   variant="outlined"
-                  label="GitHub"
-                  style={{ margin: "1rem", width: "50%" }}
+                  label="Email Address"
+                  type="email"
+                  sx={{ margin: "1rem", width: "50%" }}
                 />
                 <TextField
                   variant="outlined"
-                  label="LinkedIn"
-                  style={{ margin: "1rem", width: "50%" }}
+                  label="Phone Number"
+                  type="text"
+                  sx={{ margin: "1rem", width: "50%" }}
                 />
               </div>
-            </div>
-            <div className="programing-languages-container">
-              <div className="programing-languages-container-item">
-                <label>C (All)</label>
-                <input type="checkbox" />
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                <div>
+                  <TextField
+                    variant="outlined"
+                    label="GitHub"
+                    style={{ margin: "1rem", width: "50%" }}
+                  />
+                  <TextField
+                    variant="outlined"
+                    label="LinkedIn"
+                    style={{ margin: "1rem", width: "50%" }}
+                  />
+                </div>
               </div>
-              <div className="programing-languages-container-item">
-                <label>Go</label>
-                <input type="checkbox" />
+              <div className="programing-languages-container">
+                <div className="programing-languages-container-item">
+                  <label>C (All)</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="programing-languages-container-item">
+                  <label>Go</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="programing-languages-container-item">
+                  <label>Java</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="programing-languages-container-item">
+                  <label>Javascript</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="programing-languages-container-item">
+                  <label>Kotlin</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="programing-languages-container-item">
+                  <label>Other</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="programing-languages-container-item">
+                  <label>Python</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="programing-languages-container-item">
+                  <label>Ruby</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="programing-languages-container-item">
+                  <label>Rust</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="programing-languages-container-item">
+                  <label>Swift</label>
+                  <input type="checkbox" />
+                </div>
               </div>
-              <div className="programing-languages-container-item">
-                <label>Java</label>
-                <input type="checkbox" />
+              <div className="backend-container">
+                <div className="backend-item">
+                  <label>Django</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="backend-item">
+                  <label>Express</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="backend-item">
+                  <label>Flask</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="backend-item">
+                  <label>Laravel</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="backend-item">
+                  <label>Other</label>
+                  <input type="checkbox" />
+                </div>
               </div>
-              <div className="programing-languages-container-item">
-                <label>Javascript</label>
-                <input type="checkbox" />
+              <div className="databases-container">
+                <div className="databases-item">
+                  <label>MongoDB</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="databases-item">
+                  <label>MySQL</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="databases-item">
+                  <label>Other</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="databases-item">
+                  <label>PostgreSQL</label>
+                  <input type="checkbox" />
+                </div>
+                <div className="databases-item">
+                  <label>SQLite</label>
+                  <input type="checkbox" />
+                </div>
               </div>
-              <div className="programing-languages-container-item">
-                <label>Kotlin</label>
-                <input type="checkbox" />
-              </div>
-              <div className="programing-languages-container-item">
-                <label>Other</label>
-                <input type="checkbox" />
-              </div>
-              <div className="programing-languages-container-item">
-                <label>Python</label>
-                <input type="checkbox" />
-              </div>
-              <div className="programing-languages-container-item">
-                <label>Ruby</label>
-                <input type="checkbox" />
-              </div>
-              <div className="programing-languages-container-item">
-                <label>Rust</label>
-                <input type="checkbox" />
-              </div>
-              <div className="programing-languages-container-item">
-                <label>Swift</label>
-                <input type="checkbox" />
-              </div>
-            </div>
-            <div className="backend-container">
-              <div className="backend-item">
-                <input type="checkbox" />
-              </div>
-              <div className="backend-item">
-                <input type="checkbox" />
-              </div>
-              <div className="backend-item">
-                <input type="checkbox" />
-              </div>
-              <div className="backend-item">
-                <input type="checkbox" />
-              </div>
-              <div className="backend-item">
-                <input type="checkbox" />
-              </div>
-            </div>
-          </form>
-        </fieldset>
-      </Box>
+              <Button>Apply</Button>
+            </form>
+          </fieldset>
+        </Box>
+      </Container>
     </>
   );
 }
