@@ -1,16 +1,7 @@
 import { useState } from "react";
 import CoderApplication from "../../components/CoderApplication/CoderApplication";
 import "./JoinPage.css";
-import {
-  Box,
-  Container,
-  Card,
-  Paper,
-  Typography,
-  CardContent,
-  Button,
-  Grid,
-} from "@mui/material";
+import { Box, Container, Paper, Button, Grid } from "@mui/material";
 import Join from "../../images/join.jpg";
 import Partner from "../../images/partner.png";
 import Donate from "../../images/donate.jpeg";
@@ -65,8 +56,19 @@ export default function ApplyPage() {
           <Paper style={{ padding: "5rem" }}>
             <Grid container spacing={2}>
               <Grid item xs={8}>
-                <p>Are you a NPO in need of technological help?</p>
-                <p></p>
+                <h4>
+                  Is your NPO looking to reach more of your target audience?
+                </h4>
+                <p style={{ textAlign: "justify" }}>
+                  Let the amazing Web It Foward team bring your organization
+                  into the fast-paced world of technlogy. Anything and
+                  everything from web design, data analytics, marketing, and app
+                  development to help your organization help others, more
+                  efficiently.
+                </p>
+                <Button variant="outlined" style={{ marginTop: "2rem" }}>
+                  Partner
+                </Button>
               </Grid>
               <Grid item xs={4}>
                 <img src={Partner} alt="..." style={{ width: "100%" }} />
