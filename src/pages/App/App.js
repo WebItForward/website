@@ -4,7 +4,7 @@ import HomePage from "../HomePage/HomePage";
 import AboutPage from "../AboutPage/AboutPage";
 import ProjectPage from "../ProjectsPage/ProjectPage";
 import ContactPage from "../ContactPage/ContactPage";
-import ApplyPage from "../ApplyPage/ApplyPage";
+import JoinPage from "../JoinPage/JoinPage";
 import "./App.css";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/apply" element={<ApplyPage />} />
+        <Route path="/join" element={<JoinPage />} />
       </Routes>
     </div>
   );
