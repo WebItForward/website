@@ -1,0 +1,18 @@
+.homepage-text-overlay {
+  position: absolute;
+  background-color: aliceblue;
+  left: 50%;
+  padding: 2rem;
+}
+
+.homepage-button-overlay {
+  position: absolute;
+  bottom: 5%;
+  left: auto;
+  padding: 2rem;
+}
+
+.homepage-button-overlay button {
+  width: 10rem;
+  background-color: blueviolet;
+}
